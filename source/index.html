@@ -14,45 +14,45 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="#">
-      <img src="img/header-logo.svg" width="185" height="96" alt="Логотип сервиса бронирования отелей в Седоне.">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item main-nav__item--current">
-          <a class="main-nav__link" href="#">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Фото и видео</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Форма отзыва</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#" lang="en">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
-    <section class="hero">
-      <img class="hero__slogan hero__slogan--shown" src="img/hero-welcome.svg" width="157" height="52" lang="en"
-        alt="Welcome to the gorgeous!">
-      <img class="hero__slogan hero__slogan--shown" src="img/hero-sedona.svg" width="282" height="49" lang="en"
-        alt="Sedona.">
-      <img class="hero__slogan hero__slogan--shown" src="img/hero-grand-canyon.svg" width="181" height="49" lang="en"
-        alt="Because the Grand Canyon sucks!">
-    </section>
+    <div class="main-header__container">
+      <a class="main-header__logo" href="#">
+        <img src="img/header-logo.svg" width="185" height="96" alt="Логотип сервиса бронирования отелей в Седоне.">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--current">
+            <a class="main-nav__link" href="#">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#" lang="en">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <img class="hero__slogan" src="img/hero-welcome.svg" width="157" height="52" lang="en"
+          alt="Welcome to the gorgeous!">
+        <img class="hero__slogan" src="img/hero-sedona.svg" width="282" height="49" lang="en"
+          alt="Sedona.">
+        <img class="hero__slogan" src="img/hero-grand-canyon.svg" width="181" height="49" lang="en"
+          alt="Because the Grand Canyon sucks!">
+      </div>
+    </div>
   </header>
   <main class="main-container">
     <h1 class="visually-hidden">Сервис бронирования отелей в Седоне.</h1>
     <section class="advantages">
-      <div class="advantages__wrapper">
-        <header class="advantages__header heading">
-          <p class="heading__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-          <h2 class="heading__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
-        </header>
+      <div class="advantages__container">
+        <p class="advantages__title title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+        <h2 class="advantages__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--has-photo">
             <div class="advantage advantage--background-bright">
@@ -103,48 +103,53 @@
       </div>
     </section>
     <section class="hotel-search">
-      <header class="hotel-search__header heading">
-        <h2 class="heading__title">Заинтересовались?</h2>
-        <p class="heading__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
-          Седоне</p>
-      </header>
-      <a class="hotel-search__button button" href="">Найти Гостиницу</a>
+      <div class="hotel-search__container">
+        <h2 class="hotel-search__title title">Заинтересовались?</h2>
+        <p class="hotel-search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+          гостиниц в Седоне</p>
+        <a class="hotel-search__button button" href="">Найти Гостиницу</a>
+      </div>
     </section>
     <section class="map">
-      <img class="map__image" src="img/map-mobile.jpg" width="320" height="350" alt="Карта расположения Седоны">
+      <h2 class="visually-hidden">Седона на карте</h2>
+      <div class="map__container">
+        <img class="map__image" src="img/map-mobile.jpg" width="320" height="350" alt="Карта расположения Седоны">
+      </div>
     </section>
   </main>
   <footer class="main-footer">
-    <a class="main-footer__link" href="#">#visitSedona</a>
-    <ul class="main-footer__social social">
-      <li class="social__item">
-        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-          <span class="visually-hidden">Мы в Вконтакте</span>
+    <div class="main-footer__container">
+      <a class="main-footer__link" href="#">#visitSedona</a>
+      <ul class="main-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Мы в Вконтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Мы в Телеграме</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Мы в Ютубе</span>
+          </a>
+        </li>
+      </ul>
+      <p class="copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          Разработано
+          <span class="copyright__logo">
+            <svg width="29" height="35" viewBox="0 0 29 35" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.65 0.449951H14.55L1.05 1.84995V26.55L14.55 34.5499L27.95 26.55V1.84995L14.65 0.449951ZM26.05 12.55L14.55 5.74995V5.64995H14.45L14.35 5.54995V5.64995L2.95 12.55V3.54995L14.45 2.34995L26.05 3.54995V12.55ZM14.45 7.24995L25.95 13.95L21.45 16.55L14.35 12.35V13.75L20.25 17.25L19.35 17.75L14.35 14.75V16.15L18.15 18.45L17.35 18.95L14.35 17.15V18.55L16.25 19.65L14.45 20.75L3.05 14.05L14.45 7.24995ZM2.95 15.55L14.35 22.35V23.35L6.45 18.65V20.05L14.45 24.85V25.95L6.45 21.25V22.65L14.45 27.45L22.55 22.55V17.35L25.95 15.35V25.35L14.45 32.25L2.95 25.45V15.55Z"
+                fill="black" />
+            </svg>
+          </span>
         </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-          <span class="visually-hidden">Мы в Телеграме</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-          <span class="visually-hidden">Мы в Ютубе</span>
-        </a>
-      </li>
-    </ul>
-    <p class="copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        Разработано
-        <span class="copyright__logo">
-          <svg width="29" height="35" viewBox="0 0 29 35" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M14.65 0.449951H14.55L1.05 1.84995V26.55L14.55 34.5499L27.95 26.55V1.84995L14.65 0.449951ZM26.05 12.55L14.55 5.74995V5.64995H14.45L14.35 5.54995V5.64995L2.95 12.55V3.54995L14.45 2.34995L26.05 3.54995V12.55ZM14.45 7.24995L25.95 13.95L21.45 16.55L14.35 12.35V13.75L20.25 17.25L19.35 17.75L14.35 14.75V16.15L18.15 18.45L17.35 18.95L14.35 17.15V18.55L16.25 19.65L14.45 20.75L3.05 14.05L14.45 7.24995ZM2.95 15.55L14.35 22.35V23.35L6.45 18.65V20.05L14.45 24.85V25.95L6.45 21.25V22.65L14.45 27.45L22.55 22.55V17.35L25.95 15.35V25.35L14.45 32.25L2.95 25.45V15.55Z"
-              fill="black" />
-          </svg>
-        </span>
-      </a>
-    </p>
+      </p>
+    </div>
   </footer>
 </body>
 
