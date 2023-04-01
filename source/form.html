@@ -13,7 +13,7 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="#">
+    <a class="main-header__logo" href="index.html">
       <img src="img/header-logo.svg" width="185" height="96" alt="Логотип сервиса бронирования отелей в Седоне.">
     </a>
     <nav class="main-nav">
@@ -75,13 +75,13 @@
           <li class="feedback-form__item">
             <label class="field">
               <span class="field__name">Контактный телефон*:</span>
-              <input class="field__input field__input--has-icon field__input--icon-phone" type="text" name="phone-number" placeholder="Введите телефон" required>
+              <input class="field__input field__input--has-icon field__input--icon-phone" type="tel" name="phone-number" placeholder="Введите телефон" required>
             </label>
           </li>
           <li class="feedback-form__item">
             <label class="field">
               <span class="field__name">Электронная почта*:</span>
-              <input class="field__input field__input--has-icon field__input--icon-email" type="text" name="email" placeholder="Введите e-mail" required>
+              <input class="field__input field__input--has-icon field__input--icon-email" type="email" name="email" placeholder="Введите e-mail" required>
             </label>
           </li>
         </ul>
@@ -145,6 +145,15 @@
           </li>
         </ul>
       </fieldset>
+      <fieldset class="feedback-form__group">
+        <legend class="feedback-form__title">Опишите свои эмоции:</legend>
+        <label class="field">
+          <span class="visually-hidden">Что вам понравилось?</span>
+          <textarea class="field__input field__input--textarea" name="emotions" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+        </label>
+      </fieldset>
+      <button class="feedback-form__button button" type="submit">Отправить отзыв</button>
+      <span class="feedback-form__info">* — обязательные поля</span>
     </form>
   </main>
   <footer class="main-footer">
