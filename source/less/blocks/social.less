@@ -1,3 +1,28 @@
-// .social {
+.social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-// }
+.social__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background-color: @color-seagull;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--vk {
+    background-image: url("../img/social-vk.svg");
+  }
+
+  &--telegram {
+    background-image: url("../img/social-telegram.svg");
+  }
+
+  &--youtube {
+    background-image: url("../img/social-youtube.svg");
+  }
+}
