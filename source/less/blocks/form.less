@@ -1,35 +1,120 @@
 .form {
-  padding: 0 20px 22px 20px;
+  padding: 0 20px;
+
   text-transform: uppercase;
+
+  @media (min-width: @vp-768) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: @vp-768) {
+    padding: 0 120px;
+  }
+}
+
+.form__container {
+  margin-bottom: 59px;
+
+  @media (min-width: @vp-768) {
+    display: grid;
+    margin-bottom: 63px;
+
+    gap: 58px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @vp-1200) {
+    margin-bottom: 71px;
+
+    gap: 100px;
+  }
 }
 
 .form__list {
+  display: grid;
+  gap: 16px;
   margin: 0;
   padding: 0;
 
   list-style: none;
+
+  &--columns-wide {
+    @media (min-width: @vp-768) {
+      padding: 0 36px;
+
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: @vp-1200) {
+      padding: 0 53px;
+
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  &--columns-narrow {
+    @media (min-width: @vp-768) {
+      padding: 0 84px;
+
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: @vp-1200) {
+      padding: 0 44px;
+
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
 }
 
 .form__group {
   margin: 0;
-  padding: 23px 24px;
+  padding: 0 0 49px 0;
 
   border: none;
-  border-bottom: 1px solid @color-whisper-e5;
 
-  &--user-information {
-    padding-bottom: 39px;
+  @media (min-width: @vp-768) {
+    padding-bottom: 42px;
   }
 
-  &--user-contacts {
-    padding-bottom: 34px;
+  @media (min-width: @vp-1200) {
+    padding-bottom: 87px;
+  }
+
+  &--user-information {
+    padding-bottom: 64px;
+
+    @media (min-width: @vp-768) {
+      padding-bottom: 0;
+    }
+  }
+
+  &--impression {
+    @media (min-width: @vp-768) {
+      padding-bottom: 48px;
+    }
+
+    @media (min-width: @vp-1200) {
+      padding-bottom: 56px;
+    }
+  }
+
+  &--textarea {
+    margin-bottom: 56px;
+
+    @media (min-width: @vp-768) {
+      padding-bottom: 48px;
+    }
   }
 }
 
 .form__legend {
+  margin-bottom: 28px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  text-align: center;
   color: @color-black;
 }
 

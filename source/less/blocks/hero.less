@@ -8,4 +8,16 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  &--inner {
+    min-height: 158px;
+
+    @media (min-width: @vp-768) {
+      min-height: 290px;
+    }
+
+    @media (min-width: @vp-1200) {
+      min-height: 301px;
+    }
+  }
 }
