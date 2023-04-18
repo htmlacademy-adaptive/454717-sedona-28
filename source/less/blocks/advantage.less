@@ -1,16 +1,28 @@
 .advantage {
-  padding: 24px 26px;
-
   text-align: center;
 
   &--background-bright {
     color: @color-white;
 
     background-color: @color-seagull;
+    padding: 37px 18px;
   }
 
   &--background-muted {
     background-color: @color-whisper-ee;
+    padding: 24px 26px;
+  }
+
+  &--has-icon {
+    padding: 60px 33px;
+  }
+
+  &--cropped {
+    @media (max-width: (@vp-768 + 1px)) {
+      clip-path: polygon(50% 6%, 100% 0, 100% 100%, 0 100%, 0 0);
+      padding-top: 54px;
+      padding-bottom: 40px;
+    }
   }
 }
 

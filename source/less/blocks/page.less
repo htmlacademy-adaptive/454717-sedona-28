@@ -3,6 +3,7 @@
 }
 
 .page__body {
+  min-width: 320px;
   height: 100%;
   margin: 0;
 
@@ -18,16 +19,12 @@
 .page__container {
   display: grid;
   width: 100%;
-  min-width: 320px;
   max-width: 1200px;
   min-height: 100%;
   margin: 0 auto;
 
   background-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(@color-dark-green, 0.2);
 
   grid-template-rows: min-content 1fr min-content;
-
-  @media (min-width: @vp-1200) {
-    box-shadow: 0 5px 15px rgba(@color-dark-green, 0.2);
-  }
 }

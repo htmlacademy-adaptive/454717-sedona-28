@@ -15,17 +15,32 @@
   }
 }
 
+.advantages__sub-list {
+  padding: 23px 18px 46px 18px;
+
+  gap: 25px;
+
+  @media (min-width: @vp-768) {
+    padding: 0;
+
+    gap: 0;
+    grid-column: 1/-1;
+  }
+}
+
 .advantages__heading {
   max-width: 520px;
   margin: 0 auto;
 }
 
-.advantages__item--has-photo {
-  @media (min-width: @vp-768) {
-    display: grid;
+.advantages__item {
+  &--wide {
+    @media (min-width: @vp-768) {
+      display: grid;
 
-    grid-column: 1/-1;
-    grid-template-columns: 1fr 1fr 1fr;
+      grid-column: 1/-1;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 }
 
