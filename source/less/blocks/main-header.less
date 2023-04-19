@@ -1,15 +1,41 @@
-// .main-header {
+.main-header {
+  position: relative;
 
-// }
+  min-height: 56px;
+}
 
-// .main-header__logo {
+.main-header__logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
 
-// }
+  width: 185px;
+  margin: auto;
+}
 
-// .main-header__toggle {
+.main-header__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
 
-// }
+  width: 63px;
+  height: 56px;
 
-// .main-header__nav {
+  @media (min-width: @vp-768) {
+    display: none;
+  }
+}
 
-// }
+.main-header__nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+
+  @media (min-width: @vp-768) {
+    position: static;
+  }
+}

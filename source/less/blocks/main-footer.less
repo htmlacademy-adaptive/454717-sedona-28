@@ -2,16 +2,34 @@
   padding: 33px 82px;
 
   text-transform: uppercase;
+
+  @media (min-width: @vp-768) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    gap: 40px;
+  }
 }
 
 .main-footer__hashtag {
+  display: block;
+
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  text-align: center;
   color: @color-black;
 }
 
+.main-footer__social {
+  margin: 0;
+}
+
 .main-footer__copyright {
+  display: block;
+
+  text-align: center;
   color: @color-black;
   text-decoration: none;
 }

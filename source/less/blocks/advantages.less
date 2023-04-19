@@ -7,4 +7,50 @@
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: @vp-768) {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.advantages__sub-list {
+  padding: 23px 18px 46px 18px;
+
+  gap: 25px;
+
+  @media (min-width: @vp-768) {
+    padding: 0;
+
+    gap: 0;
+    grid-column: 1/-1;
+  }
+}
+
+.advantages__heading {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.advantages__item {
+  &--wide {
+    @media (min-width: @vp-768) {
+      display: grid;
+
+      grid-column: 1/-1;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+
+.advantages__photo {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+
+  @media (min-width: @vp-768) {
+    grid-column: span 2;
+  }
 }

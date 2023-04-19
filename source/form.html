@@ -72,7 +72,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__group form__group--user-contacts">
+          <fieldset class="form__group form__group--contacts">
             <legend class="form__legend">Контактная информация:</legend>
             <ul class="form__list">
               <li class="form__item">
@@ -89,9 +89,9 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__group">
+          <fieldset class="form__group form__group--impression">
             <legend class="form__legend">Ваше общее впечатление:</legend>
-            <ul class="form__list">
+            <ul class="form__list form__list--columns-wide">
               <li class="form__item">
                 <label class="form__element custom-element">
                   <input class="custom-element__input visually-hidden" type="radio" name="impression" value="positive" checked>
@@ -117,7 +117,7 @@
           </fieldset>
           <fieldset class="form__group">
             <legend class="form__legend">Посещенные достопримечательности:</legend>
-            <ul class="form__list">
+            <ul class="form__list form__list--columns-narrow">
               <li class="form__item">
                 <label class="form__element custom-element">
                   <input class="custom-element__input visually-hidden" type="checkbox" name="sights" value="devils-bridge" checked>
@@ -148,7 +148,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__group">
+          <fieldset class="form__group form__group--textarea">
             <legend class="form__legend">Опишите свои эмоции:</legend>
             <label class="form__textarea form-input">
               <span class="visually-hidden">Что вам понравилось?</span>
@@ -187,18 +187,18 @@
       </a>
     </footer>
   </div>
-  <div class="modal modal-error modal-error--close">
-    <section class="modal__content modal-error__content">
-      <h2 class="modal-error__title">Что-то пошло не так!</h2>
-      <p class="modal-error__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="modal-error__button button" type="button">OK</button>
+  <div class="modal modal--is-open">
+    <section class="modal__content modal__content--error">
+      <h2 class="modal__title">Что-то пошло не так!</h2>
+      <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="modal__button button" type="button">OK</button>
     </section>
   </div>
-  <div class="modal modal-success modal-success--close">
-    <section class="modal__content modal-success__content">
-      <h2 class="modal-success__title">Ваш отзыв отправлен!</h2>
-      <p class="modal-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-      <button class="modal-success__button button" type="button">Закрыть окно</button>
+  <div class="modal">
+    <section class="modal__content modal__content--success">
+      <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+      <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      <button class="modal__button button" type="button">Закрыть окно</button>
     </section>
   </div>
 </body>
