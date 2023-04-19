@@ -49,48 +49,46 @@
           <p class="heading__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
         <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="form__container">
-            <fieldset class="form__group form__group--user-information">
-              <legend class="form__legend">Представьтесь:</legend>
-              <ul class="form__list">
-                <li class="form__item">
-                  <label class="form__field form-input">
-                    <span class="form-input__text">Имя*:</span>
-                    <input class="form-input__input" type="text" name="user-first-name" placeholder="Фамилия" value="Пётр" required>
-                  </label>
-                </li>
-                <li class="form__item">
-                  <label class="form__field form-input">
-                    <span class="form-input__text">Фамилия*:</span>
-                    <input class="form-input__input" type="text" name="user-last-name" placeholder="Имя" value="Пустота" required>
-                  </label>
-                </li>
-                <li class="form__item">
-                  <label class="form__field form-input">
-                    <span class="form-input__text">Отчество:</span>
-                    <input class="form-input__input" type="text" name="user-patronymic" placeholder="Отчество" value="Викторович">
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="form__group">
-              <legend class="form__legend">Контактная информация:</legend>
-              <ul class="form__list">
-                <li class="form__item">
-                  <label class="form__field form-input">
-                    <span class="form-input__text">Контактный телефон*:</span>
-                    <input class="form-input__input form-input__input--tel" type="tel" name="user-tel" placeholder="Введите телефон" required>
-                  </label>
-                </li>
-                <li class="form__item">
-                  <label class="form__field form-input">
-                    <span class="form-input__text">Электронная почта*:</span>
-                    <input class="form-input__input form-input__input--email" type="email" name="user-email" placeholder="Введите e-mail" required>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
+          <fieldset class="form__group form__group--user-information">
+            <legend class="form__legend">Представьтесь:</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__field form-input">
+                  <span class="form-input__text">Имя*:</span>
+                  <input class="form-input__input" type="text" name="user-first-name" placeholder="Фамилия" value="Пётр" required>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__field form-input">
+                  <span class="form-input__text">Фамилия*:</span>
+                  <input class="form-input__input" type="text" name="user-last-name" placeholder="Имя" value="Пустота" required>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__field form-input">
+                  <span class="form-input__text">Отчество:</span>
+                  <input class="form-input__input" type="text" name="user-patronymic" placeholder="Отчество" value="Викторович">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__group form__group--contacts">
+            <legend class="form__legend">Контактная информация:</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__field form-input">
+                  <span class="form-input__text">Контактный телефон*:</span>
+                  <input class="form-input__input form-input__input--tel" type="tel" name="user-tel" placeholder="Введите телефон" required>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__field form-input">
+                  <span class="form-input__text">Электронная почта*:</span>
+                  <input class="form-input__input form-input__input--email" type="email" name="user-email" placeholder="Введите e-mail" required>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
           <fieldset class="form__group form__group--impression">
             <legend class="form__legend">Ваше общее впечатление:</legend>
             <ul class="form__list form__list--columns-wide">
