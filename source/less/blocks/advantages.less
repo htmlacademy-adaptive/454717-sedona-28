@@ -29,8 +29,15 @@
 }
 
 .advantages__heading {
-  max-width: 520px;
-  margin: 0 auto;
+  margin: 0 auto 37px auto;
+
+  @media (min-width: @vp-768) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: @vp-1200) {
+    margin-bottom: 45px;
+  }
 }
 
 .advantages__item {

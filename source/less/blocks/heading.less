@@ -1,8 +1,20 @@
 .heading {
-  padding: 32px 18px;
+  max-width: 280px;
+
+  @media (min-width: @vp-768) {
+    max-width: 450px;
+  }
 
   text-transform: uppercase;
   text-align: center;
+
+  &--width-wide {
+    max-width: 284px;
+
+    @media (min-width: @vp-768) {
+      max-width: 490px;
+    }
+  }
 }
 
 .heading__title {
