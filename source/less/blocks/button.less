@@ -6,6 +6,7 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  text-align: center;
   color: @color-white;
   text-transform: uppercase;
   text-decoration: none;
@@ -13,4 +14,21 @@
   background-color: @color-seagull;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    background-color: @color-shakespeare-light;
+  }
+
+  &:active {
+    color: rgba(@color-white, 0.3);
+
+    background-color: @color-shakespeare;
+  }
+
+  &:disabled,
+  &--disabled {
+    background-color: @color-whisper-e5;
+
+    pointer-events: none;
+  }
 }

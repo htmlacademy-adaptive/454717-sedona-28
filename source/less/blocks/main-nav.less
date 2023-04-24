@@ -9,6 +9,7 @@
 
   @media (max-width: (@vp-768 - 0.1)) {
     background-color: @color-seagull;
+
     gap: 1px;
 
     &::after {
@@ -58,6 +59,7 @@
 
   @media (min-width: @vp-768) {
     padding: 18px 17px 17px 17px;
+
     font-size: 14px;
     line-height: 21px;
     color: @color-black;
@@ -77,6 +79,8 @@
 
   &[href]:active {
     @media (max-width: (@vp-768 - 0.1)) {
+      color: rgba(@color-white, 0.3);
+
       background-color: @color-shakespeare;
     }
 
