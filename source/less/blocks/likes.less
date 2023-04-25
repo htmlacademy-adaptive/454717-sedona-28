@@ -1,8 +1,38 @@
 .likes {
+  position: relative;
+
   flex-shrink: 0;
+  padding-left: 37px;
+
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  @media (min-width: @vp-768) {
+    padding-left: 32px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+
+    width: 23px;
+    height: 21px;
+
+    background-color: @color-black;
+    opacity: 0.3;
+
+    mask-image: url("../img/icon-like.svg");
+    mask-position: center;
+    mask-repeat: no-repeat;
+
+    @media (min-width: @vp-1200) {
+      background-color: @color-white;
+      opacity: 1;
+    }
+  }
 }
 
 .likes__number {
