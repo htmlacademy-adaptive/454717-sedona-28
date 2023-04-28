@@ -1,17 +1,36 @@
 .presentation {
-  max-width: 800px;
   margin: 0 auto;
   padding: 17px 20px 0 20px;
+
+  @media (min-width: @vp-768) {
+    padding: 58px 60px 40px 60px;
+  }
+
+  @media (min-width: @vp-1200) {
+    padding: 62px 200px 84px 200px;
+  }
 }
 
 .presentation__heading {
   max-width: 445px;
+  margin: 0 auto 38px auto;
+
+  @media (min-width: @vp-768) {
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: @vp-1200) {
+    margin-bottom: 75px;
+  }
+}
+
+.presentation__player {
   margin: 0 auto;
+  max-width: 800px;
 }
 
 .presentation__preview {
   display: block;
   width: 100%;
   height: auto;
-  margin: 0 auto;
 }

@@ -1,5 +1,15 @@
 .advantages {
+  padding-top: 32px;
+
   text-transform: uppercase;
+
+  @media (min-width: @vp-768) {
+    padding-top: 48px;
+  }
+
+  @media (min-width: @vp-1200) {
+    padding-top: 59px;
+  }
 }
 
 .advantages__list {
@@ -16,6 +26,7 @@
 }
 
 .advantages__sub-list {
+  display: grid;
   padding: 23px 18px 46px 18px;
 
   gap: 25px;
@@ -29,8 +40,15 @@
 }
 
 .advantages__heading {
-  max-width: 520px;
-  margin: 0 auto;
+  margin: 0 auto 37px auto;
+
+  @media (min-width: @vp-768) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: @vp-1200) {
+    margin-bottom: 45px;
+  }
 }
 
 .advantages__item {
@@ -46,9 +64,9 @@
 
 .advantages__photo {
   display: block;
-  margin: 0 auto;
   width: 100%;
   height: auto;
+  margin: 0 auto;
 
   @media (min-width: @vp-768) {
     grid-column: span 2;
