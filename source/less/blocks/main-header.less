@@ -32,8 +32,8 @@
   width: 63px;
   height: 56px;
 
-  border: none;
   background-color: transparent;
+  border: none;
   cursor: pointer;
 
   &:hover {
@@ -72,12 +72,13 @@
 
     width: 28px;
     height: 4px;
+
     background-color: @color-white;
   }
 
   &::before {
-    transform: rotate(45deg);
     box-shadow: none;
+    transform: rotate(45deg);
   }
 
   &::after {
@@ -96,21 +97,32 @@
   left: 0;
   z-index: 2;
 
-  display: none;
+  display: block;
+
+  @media (max-width: (@vp-768 - 0.02)) {
+    transform: translateY(-100%);
+
+    transition: transform 0.5s ease;
+  }
 
   @media (min-width: @vp-768) {
-    display: inherit;
     position: static;
     z-index: 0;
+
+    display: inherit;
   }
 }
 
 .is-open .main-header__nav {
-  display: block;
+  @media (max-width: (@vp-768 - 0.02)) {
+    transform: translateY(0);
+  }
 }
 
 .no-js .main-header__nav {
   position: relative;
 
-  display: block;
+  @media (max-width: (@vp-768 - 0.02)) {
+    transform: translateY(0);
+  }
 }

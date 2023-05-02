@@ -1,8 +1,36 @@
+.map {
+  position: relative;
+
+  min-height: 350px;
+  overflow: hidden;
+}
+
 .map iframe {
+  position: relative;
+  z-index: 2;
+
   display: block;
   width: 100%;
   height: auto;
+  min-height: 350px;
   margin: 0 auto;
 
   border: none;
+}
+
+.map__image-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: block;
+  width: 100%;
+  min-height: 350px;
+
+  transform: translate(-50%, -50%);
+}
+
+.map__image {
+  display: block;
+  width: 100%;
 }
