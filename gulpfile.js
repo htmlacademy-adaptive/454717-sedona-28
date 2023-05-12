@@ -70,15 +70,9 @@ const createWebP = () => {
 //SVG
 
 const svg = () => {
-  return gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
+  return gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
-}
-
-const svgFavicons = () => {
-  return gulp.src('source/img/favicons/*.svg')
-    .pipe(svgo())
-    .pipe(gulp.dest('build/img/favicons'));
 }
 
 const makeStack = () => {
@@ -149,7 +143,6 @@ export const build = gulp.series(
     scripts,
     createWebP,
     svg,
-    svgFavicons,
     makeStack,
   ),
 );
@@ -164,7 +157,6 @@ export default gulp.series(
     scripts,
     createWebP,
     svg,
-    svgFavicons,
     makeStack,
   ),
   gulp.series (
