@@ -12,7 +12,7 @@
 
 .media__heading {
   max-width: 458px;
-  margin: 0 auto 25px auto;
+  margin: 0 auto 38px auto;
 }
 
 .media__list {
@@ -63,7 +63,7 @@
 .media__card {
   height: 100%;
   margin: 0;
-  padding: 24px 0 25px 0;
+  padding: 24px 0 27px 0;
 
   @media (min-width: @vp-768) {
     padding: 0;
@@ -183,5 +183,9 @@
 
   @media (min-width: @vp-1200) {
     color: @color-white;
+  }
+
+  &:not(:last-child) {
+    margin-right: 30px;
   }
 }
