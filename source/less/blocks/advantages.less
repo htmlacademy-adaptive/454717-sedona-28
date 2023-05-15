@@ -27,6 +27,7 @@
 
 .advantages__sub-list {
   display: grid;
+  justify-content: center;
   padding: 23px 18px 46px 18px;
 
   gap: 30px;
@@ -69,9 +70,16 @@
 
   @media (min-width: @vp-768) {
     position: relative;
+
     min-height: 256px;
 
     grid-column: span 2;
+  }
+
+  &--reversed {
+    @media (min-width: @vp-768) {
+      order: -1;
+    }
   }
 }
 
@@ -87,5 +95,7 @@
     min-height: 100%;
 
     transform: translate(-50%, -50%);
+
+    object-fit: cover;
   }
 }

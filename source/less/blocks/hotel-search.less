@@ -1,10 +1,14 @@
 .hotel-search {
   max-width: 458px;
   margin: 0 auto;
-  padding: 38px 18px 49px 18px;
+  padding: 42px 18px 49px 18px;
 
   @media (min-width: @vp-768) {
-    padding: 60px 30px 55px 30px;
+    padding: 60px 0 55px 0;
+  }
+
+  @media (min-width: @vp-1200) {
+    padding-bottom: 66px;
   }
 }
 
@@ -14,8 +18,16 @@
   @media (min-width: @vp-768) {
     margin-bottom: 44px;
   }
+
+  @media (min-width: @vp-1200) {
+    margin-bottom: 42px;
+  }
 }
 
 .hotel-search__button {
   width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }

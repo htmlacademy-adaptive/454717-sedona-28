@@ -1,5 +1,6 @@
 .hero {
   position: relative;
+
   display: flex;
   justify-content: center;
   min-height: 389px;
@@ -15,6 +16,9 @@
   }
 
   @media (min-width: @vp-768) {
+    align-items: flex-start;
+    min-height: 518px;
+
     background-image: url("../img/background/hero-tablet@1x.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -47,14 +51,16 @@
   &::before {
     content: "";
     position: absolute;
+    right: 0;
     bottom: 0;
     left: 0;
-    right: 0;
+
     width: 100%;
     height: 57px;
+
     background-image: url("../img/stack.svg#hero-triangle");
-    background-size: 1200px 57px;
     background-position: center bottom;
+    background-size: 1200px 57px;
   }
 }
 
@@ -63,6 +69,8 @@
 
   @media (min-width: @vp-768) {
     width: 461px;
+    max-height: 400px;
+    margin-top: 77px;
   }
 
   @media (min-width: @vp-1200) {

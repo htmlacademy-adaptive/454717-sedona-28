@@ -7,9 +7,10 @@
   gap: 30px;
 
   @media (min-width: @vp-768) {
-    padding: 36px 60px;
+    align-items: center;
+    padding: 29px 60px 35px 60px;
 
-    grid-template-columns: 140px 1fr 140px;
+    grid-template-columns: 200px 1fr 200px;
   }
 
   @media (min-width: @vp-1200) {
@@ -20,13 +21,16 @@
 
 .main-footer__hashtag {
   display: block;
-  margin-top: 11px;
 
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
   color: @color-black;
+
+  @media (min-width: @vp-768) {
+    text-align: left;
+  }
 }
 
 .main-footer__social {
@@ -37,7 +41,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 6px;
 
   text-align: center;
   color: @color-black;
@@ -52,7 +55,7 @@
   }
 
   @media (min-width: @vp-768) {
-    justify-content: end;
+    justify-self: end;
   }
 }
 

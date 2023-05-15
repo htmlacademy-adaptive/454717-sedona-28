@@ -26,16 +26,18 @@
 
   @media (min-width: @vp-768) {
     font-size: 21px;
+    margin-bottom: 30px;
   }
 
-  &--font-size-l {
+  &--size-l {
     @media (min-width: @vp-768) {
       font-size: 30px;
     }
   }
 
-  &--font-size-xl {
+  &--size-xl {
     font-size: 21px;
+    margin-bottom: 21px;
 
     @media (min-width: @vp-768) {
       font-size: 30px;
@@ -46,9 +48,15 @@
     }
   }
 
-  &--font-size-2xl {
+  &--size-2xl {
     @media (min-width: @vp-768) {
       line-height: 40px;
+    }
+  }
+
+  &--margin-big {
+    @media (min-width: @vp-768) {
+      margin-bottom: 33px;
     }
   }
 }
@@ -59,4 +67,17 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
+
+.heading__description br {
+  display: none;
+
+  @media (min-width: @vp-768) {
+    display: initial;
+  }
+}
+
