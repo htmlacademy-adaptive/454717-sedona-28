@@ -3,11 +3,11 @@
   padding: 17px 20px 0 20px;
 
   @media (min-width: @vp-768) {
-    padding: 58px 60px 40px 60px;
+    padding: 0 60px 47px 60px;
   }
 
   @media (min-width: @vp-1200) {
-    padding: 62px 200px 84px 200px;
+    padding: 0 200px 91px 200px;
   }
 }
 
@@ -17,11 +17,11 @@
 
   @media (min-width: @vp-768) {
     max-width: 445px;
-    margin-bottom: 66px;
+    margin-bottom: 88px;
   }
 
   @media (min-width: @vp-1200) {
-    margin-bottom: 75px;
+    margin-bottom: 86px;
   }
 }
 
@@ -43,19 +43,34 @@
   top: 50%;
   left: 50%;
 
-  width: 48px;
-  height: 54px;
+  width: 58px;
+  height: 64px;
 
-  background-color: rgba(@color-white, 0.7);
   transform: translate(-50%, -50%);
 
-  clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
 
-  &:hover {
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+
+    background-color: rgba(@color-white, 0.7);
+
+    clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  }
+
+  &:hover::before {
     background-color: rgba(@color-white, 0.9);
   }
 
-  &:active {
+  &:active::before {
     background-color: rgba(@color-white, 0.6);
   }
+}
+
+.presentation__player-control .visually-hidden {
+  transform: translate(5px, 5px);
 }

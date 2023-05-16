@@ -4,12 +4,24 @@
   flex-shrink: 0;
   padding-left: 37px;
 
+  font-family: inherit;
+
   background-color: transparent;
   border: none;
   cursor: pointer;
 
   @media (min-width: @vp-768) {
+    max-width: 130px;
+    margin-top: 11px;
     padding-left: 32px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   &::before {
