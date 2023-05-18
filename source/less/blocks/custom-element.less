@@ -1,6 +1,6 @@
 .custom-element {
   display: grid;
-  align-items: center;
+  align-items: start;
 
   cursor: pointer;
 
@@ -68,8 +68,8 @@
 }
 
 .custom-element__input:disabled ~ span {
-  opacity: 0.3;
   cursor: auto;
+  opacity: 0.3;
 }
 
 .custom-element__input:disabled + .custom-element__icon {
@@ -85,6 +85,8 @@
 }
 
 .custom-element__text {
+  margin-top: 11px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;

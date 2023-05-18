@@ -1,3 +1,36 @@
 .modal-error {
-  //
+  width: 100%;
+  max-width: 400px;
+  padding: 45px 42px 35px 41px;
+
+  @media (min-width: @vp-768) {
+    width: 400px;
+    padding: 48px 47px 49px 46px;
+  }
+}
+
+.modal-error__heading {
+  margin: 0 auto 30px auto;
+
+  @media (min-width: @vp-768) {
+    margin-bottom: 46px;
+  }
+}
+
+.modal-error__button {
+  display: flex;
+  width: 180px;
+  margin: 0 auto;
+
+  font-size: 18px;
+
+  @media (min-width: @vp-768) {
+    width: 272px;
+
+    font-size: 21px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }

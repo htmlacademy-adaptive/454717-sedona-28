@@ -7,7 +7,7 @@
   gap: 30px;
 
   @media (min-width: @vp-768) {
-    align-items: center;
+    align-items: start;
     padding: 29px 60px 35px 60px;
 
     grid-template-columns: 200px 1fr 200px;
@@ -29,6 +29,8 @@
   color: @color-black;
 
   @media (min-width: @vp-768) {
+    margin-top: 12px;
+
     text-align: left;
   }
 }
@@ -40,7 +42,7 @@
 .main-footer__copyright {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 
   text-align: center;
   color: @color-black;
@@ -57,12 +59,17 @@
   }
 
   @media (min-width: @vp-768) {
+    margin-top: 6px;
+
+    text-align: left;
+
     justify-self: end;
   }
 }
 
 .main-footer__copyright-text {
-  margin-right: 13px;
+  margin-top: 8px;
+  margin-right: 12px;
 }
 
 .main-footer__copyright-logo {
