@@ -60,7 +60,7 @@ const copyImages = () => {
 //WebP
 
 const createWebP = () => {
-  return gulp.src('source/img/**/*.{jpg,png}')
+  return gulp.src(['source/img/**/*.{jpg,png}', '!source/img/favicons/*.{jpg,png}'])
     .pipe(squoosh({
       webp: {}
     }))
@@ -86,7 +86,7 @@ const makeStack = () => {
 
 const copy = (done) => {
   gulp.src([
-    'source/fonts/*.{ woff2,woff}',
+    'source/fonts/*.{woff2,woff}',
     'source/*.ico',
     'source/*.webmanifest'
   ], {
@@ -135,9 +135,9 @@ const watcher = () => {
 
 export const build = gulp.series(
   clean,
+  copy,
+  optimizeImages,
   gulp.parallel(
-    copy,
-    optimizeImages,
     styles,
     html,
     scripts,
@@ -149,9 +149,9 @@ export const build = gulp.series(
 
 export default gulp.series(
   clean,
+  copy,
+  copyImages,
   gulp.parallel(
-    copy,
-    copyImages,
     styles,
     html,
     scripts,

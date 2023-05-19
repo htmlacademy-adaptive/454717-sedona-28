@@ -4,14 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preload" href="fonts/ptsans.woff2" as="fonts" crossorigin="anonymous">
-  <link rel="preload" href="fonts/ptsansbold.woff2" as="fonts" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <title>HTML Academy: Седона, каталог</title>
   <meta name="description" content="Учебный проект HTML Academy: Седона. Страница каталога.">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
-  <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
@@ -57,9 +57,9 @@
             <figure class="media__card">
               <a class="media__card-link" href="#">
                 <picture class="media__img-wrapper">
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/catalog/non-native-spaces-desktop@1x.webp 1x, img/content/catalog/non-native-spaces-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/catalog/non-native-spaces-tablet@1x.webp 1x, img/content/catalog/non-native-spaces-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/content/catalog/non-native-spaces-phone@1x.webp 1x, img/content/catalog/non-native-spaces-phone@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/catalog/non-native-spaces-desktop@1x.webp 1x, img/content/catalog/non-native-spaces-desktop@2x.webp 2x" width="1200" height="400">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/catalog/non-native-spaces-tablet@1x.webp 1x, img/content/catalog/non-native-spaces-tablet@2x.webp 2x" width="648" height="400">
+                  <source type="image/webp" srcset="img/content/catalog/non-native-spaces-phone@1x.webp 1x, img/content/catalog/non-native-spaces-phone@2x.webp 2x" width="280" height="280">
                   <source media="(min-width: 1200px)" srcset="img/content/catalog/non-native-spaces-desktop@1x.jpg 1x, img/content/catalog/non-native-spaces-desktop@2x.jpg 2x" width="1200" height="400">
                   <source media="(min-width: 768px)" srcset="img/content/catalog/non-native-spaces-tablet@1x.jpg 1x, img/content/catalog/non-native-spaces-tablet@2x.jpg 2x" width="648" height="400">
                   <img class="media__img" src="img/content/catalog/non-native-spaces-phone@1x.jpg" srcset="img/content/catalog/non-native-spaces-phone@2x.jpg 2x" width="280" height="280" alt="Дорога, уходящая вдаль к закату.">
@@ -81,9 +81,9 @@
             <figure class="media__card">
               <a class="media__card-link" href="#">
                 <picture class="media__img-wrapper">
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/catalog/native-plants-desktop@1x.webp 1x, img/content/catalog/native-plants-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/catalog/native-plants-tablet@1x.webp 1x, img/content/catalog/native-plants-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/content/catalog/native-plants-phone@1x.webp 1x, img/content/catalog/native-plants-phone@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/catalog/native-plants-desktop@1x.webp 1x, img/content/catalog/native-plants-desktop@2x.webp 2x" width="400" height="267">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/catalog/native-plants-tablet@1x.webp 1x, img/content/catalog/native-plants-tablet@2x.webp 2x" width="324" height="267">
+                  <source type="image/webp" srcset="img/content/catalog/native-plants-phone@1x.webp 1x, img/content/catalog/native-plants-phone@2x.webp 2x" width="280" height="280">
                   <source media="(min-width: 1200px)" srcset="img/content/catalog/native-plants-desktop@1x.jpg 1x, img/content/catalog/native-plants-desktop@2x.jpg 2x" width="400" height="267">
                   <source media="(min-width: 768px)" srcset="img/content/catalog/native-plants-tablet@1x.jpg 1x, img/content/catalog/native-plants-tablet@2x.jpg 2x" width="324" height="267">
                   <img class="media__img" src="img/content/catalog/native-plants-phone@1x.jpg" srcset="img/content/catalog/native-plants-phone@2x.jpg 2x" width="280" height="280" alt="Веточка на фоне гор.">
@@ -105,9 +105,9 @@
             <figure class="media__card">
               <a class="media__card-link" href="#">
                 <picture class="media__img-wrapper">
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/catalog/road-north-desktop@1x.webp 1x, img/content/catalog/road-north-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/catalog/road-north-tablet@1x.webp 1x, img/content/catalog/road-north-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/content/catalog/road-north-phone@1x.webp 1x, img/content/catalog/road-north-phone@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/catalog/road-north-desktop@1x.webp 1x, img/content/catalog/road-north-desktop@2x.webp 2x" width="400" height="267">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/catalog/road-north-tablet@1x.webp 1x, img/content/catalog/road-north-tablet@2x.webp 2x" width="324" height="267">
+                  <source type="image/webp" srcset="img/content/catalog/road-north-phone@1x.webp 1x, img/content/catalog/road-north-phone@2x.webp 2x" width="280" height="280">
                   <source media="(min-width: 1200px)" srcset="img/content/catalog/road-north-desktop@1x.jpg 1x, img/content/catalog/road-north-desktop@2x.jpg 2x" width="400" height="267">
                   <source media="(min-width: 768px)" srcset="img/content/catalog/road-north-tablet@1x.jpg 1x, img/content/catalog/road-north-tablet@2x.jpg 2x" width="324" height="267">
                   <img class="media__img" src="img/content/catalog/road-north-phone@1x.jpg" srcset="img/content/catalog/road-north-phone@2x.jpg 2x" width="280" height="280" alt="Дорога, петляющая горам.">
@@ -129,9 +129,9 @@
             <figure class="media__card">
               <a class="media__card-link" href="#">
                 <picture class="media__img-wrapper">
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/catalog/devils-bridge-desktop@1x.webp 1x, img/content/catalog/devils-bridge-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/catalog/devils-bridge-tablet@1x.webp 1x, img/content/catalog/devils-bridge-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/content/catalog/devils-bridge-phone@1x.webp 1x, img/content/catalog/devils-bridge-phone@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/catalog/devils-bridge-desktop@1x.webp 1x, img/content/catalog/devils-bridge-desktop@2x.webp 2x" width="400" height="267">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/catalog/devils-bridge-tablet@1x.webp 1x, img/content/catalog/devils-bridge-tablet@2x.webp 2x" width="324" height="267">
+                  <source type="image/webp" srcset="img/content/catalog/devils-bridge-phone@1x.webp 1x, img/content/catalog/devils-bridge-phone@2x.webp 2x" width="280" height="280">
                   <source media="(min-width: 1200px)" srcset="img/content/catalog/devils-bridge-desktop@1x.jpg 1x, img/content/catalog/devils-bridge-desktop@2x.jpg 2x" width="400" height="267">
                   <source media="(min-width: 768px)" srcset="img/content/catalog/devils-bridge-tablet@1x.jpg 1x, img/content/catalog/devils-bridge-tablet@2x.jpg 2x" width="324" height="267">
                   <img class="media__img" src="img/content/catalog/devils-bridge-phone@1x.jpg" srcset="img/content/catalog/devils-bridge-phone@2x.jpg 2x" width="280" height="280" alt="Крутые скалы похожие на мост.">
@@ -158,9 +158,9 @@
         </div>
         <div class="presentation__player">
           <picture class="presentation__preview-wrapper">
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/catalog/video-preview-desktop@1x.webp 1x, img/content/catalog/video-preview-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/catalog/video-preview-tablet@1x.webp 1x, img/content/catalog/video-preview-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/content/catalog/video-preview-phone@1x.webp 1x, img/content/catalog/video-preview-phone@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/catalog/video-preview-desktop@1x.webp 1x, img/content/catalog/video-preview-desktop@2x.webp 2x" width="800" height="500">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/catalog/video-preview-tablet@1x.webp 1x, img/content/catalog/video-preview-tablet@2x.webp 2x" width="648" height="500">
+            <source type="image/webp" srcset="img/content/catalog/video-preview-phone@1x.webp 1x, img/content/catalog/video-preview-phone@2x.webp 2x" width="280" height="177">
             <source media="(min-width: 1200px)" srcset="img/content/catalog/video-preview-desktop@1x.jpg 1x, img/content/catalog/video-preview-desktop@2x.jpg 2x" width="800" height="500">
             <source media="(min-width: 768px)" srcset="img/content/catalog/video-preview-tablet@1x.jpg 1x, img/content/catalog/video-preview-tablet@2x.jpg 2x" width="648" height="500">
             <img class="presentation__preview" src="img/content/catalog/video-preview-phone@1x.jpg" srcset="img/content/catalog/video-preview-phone@2x.jpg 2x" width="280" height="177" alt="Достопримечательности Седоны.">
@@ -192,7 +192,7 @@
       </ul>
       <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener" aria-label="Перейти на сайт HTML Academy.">
         <span class="main-footer__copyright-text">Разработано</span>
-        <svg class="main-footer__copyright-logo" role="img" aria-label="HTML Academy" width="29" height="35" viewBox="0 0 29 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <svg class="main-footer__copyright-logo" role="img" aria-label="HTML Academy." width="29" height="35" viewBox="0 0 29 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path d="M14.65 0.449951H14.55L1.05 1.84995V26.55L14.55 34.5499L27.95 26.55V1.84995L14.65 0.449951ZM26.05 12.55L14.55 5.74995V5.64995H14.45L14.35 5.54995V5.64995L2.95 12.55V3.54995L14.45 2.34995L26.05 3.54995V12.55ZM14.45 7.24995L25.95 13.95L21.45 16.55L14.35 12.35V13.75L20.25 17.25L19.35 17.75L14.35 14.75V16.15L18.15 18.45L17.35 18.95L14.35 17.15V18.55L16.25 19.65L14.45 20.75L3.05 14.05L14.45 7.24995ZM2.95 15.55L14.35 22.35V23.35L6.45 18.65V20.05L14.45 24.85V25.95L6.45 21.25V22.65L14.45 27.45L22.55 22.55V17.35L25.95 15.35V25.35L14.45 32.25L2.95 25.45V15.55Z"/>
         </svg>
       </a>
