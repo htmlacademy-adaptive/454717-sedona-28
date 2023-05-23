@@ -26,16 +26,19 @@
 
   @media (min-width: @vp-768) {
     font-size: 21px;
+    margin-bottom: 30px;
   }
 
-  &--font-size-l {
+  &--size-l {
     @media (min-width: @vp-768) {
       font-size: 30px;
+      line-height: 40px;
     }
   }
 
-  &--font-size-xl {
+  &--size-xl {
     font-size: 21px;
+    margin-bottom: 21px;
 
     @media (min-width: @vp-768) {
       font-size: 30px;
@@ -46,9 +49,29 @@
     }
   }
 
-  &--font-size-2xl {
+  &--margin-tiny {
+    margin-bottom: 24px;
+
     @media (min-width: @vp-768) {
-      line-height: 40px;
+      margin-bottom: 14px;
+    }
+
+    @media (min-width: @vp-1200) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &--margin-small {
+    margin-bottom: 24px;
+  }
+
+  &--margin-medium {
+    margin-bottom: 28px;
+  }
+
+  &--margin-big {
+    @media (min-width: @vp-768) {
+      margin-bottom: 33px;
     }
   }
 }
@@ -59,4 +82,16 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .br-tablet-desktop {
+    display: none;
+
+    @media (min-width: @vp-768) {
+      display: initial;
+    }
+  }
 }

@@ -7,9 +7,10 @@
   gap: 30px;
 
   @media (min-width: @vp-768) {
-    padding: 36px 60px;
+    align-items: start;
+    padding: 29px 60px 35px 60px;
 
-    grid-template-columns: 140px 1fr 140px;
+    grid-template-columns: 200px 1fr 200px;
   }
 
   @media (min-width: @vp-1200) {
@@ -20,13 +21,18 @@
 
 .main-footer__hashtag {
   display: block;
-  margin-top: 11px;
 
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
   color: @color-black;
+
+  @media (min-width: @vp-768) {
+    margin-top: 12px;
+
+    text-align: left;
+  }
 }
 
 .main-footer__social {
@@ -36,12 +42,13 @@
 .main-footer__copyright {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 6px;
+  align-items: flex-start;
 
   text-align: center;
   color: @color-black;
   text-decoration: none;
+
+  justify-self: center;
 
   &:hover {
     color: @color-seagull;
@@ -52,10 +59,19 @@
   }
 
   @media (min-width: @vp-768) {
-    justify-content: end;
+    margin-top: 6px;
+
+    text-align: left;
+
+    justify-self: end;
   }
 }
 
 .main-footer__copyright-text {
-  margin-right: 13px;
+  margin-top: 8px;
+  margin-right: 12px;
+}
+
+.main-footer__copyright-logo {
+  flex-shrink: 0;
 }

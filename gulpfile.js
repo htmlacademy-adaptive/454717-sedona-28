@@ -60,7 +60,7 @@ const copyImages = () => {
 //WebP
 
 const createWebP = () => {
-  return gulp.src('source/img/**/*.{jpg,png}')
+  return gulp.src(['source/img/**/*.{jpg,png}', '!source/img/favicons/*.{jpg,png}'])
     .pipe(squoosh({
       webp: {}
     }))
@@ -70,13 +70,13 @@ const createWebP = () => {
 //SVG
 
 const svg = () => {
-  return gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
+  return gulp.src(['source/img/**/*.svg', '!source/img/svg/*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 }
 
 const makeStack = () => {
-  return gulp.src('source/img/icons/**/*.svg')
+  return gulp.src('source/img/svg/**/*.svg')
     .pipe(svgo())
     .pipe(stacksvg())
     .pipe(gulp.dest('build/img'));
@@ -86,7 +86,7 @@ const makeStack = () => {
 
 const copy = (done) => {
   gulp.src([
-    'source/fonts/*.{ woff2,woff}',
+    'source/fonts/*.{woff2,woff}',
     'source/*.ico',
     'source/*.webmanifest'
   ], {
@@ -127,7 +127,7 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
-  gulp.watch('source/js/*.js', gulp.series(scripts));
+  gulp.watch('source/js/*.js', gulp.series(scripts, reload));
   gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
@@ -135,9 +135,9 @@ const watcher = () => {
 
 export const build = gulp.series(
   clean,
+  copy,
+  optimizeImages,
   gulp.parallel(
-    copy,
-    optimizeImages,
     styles,
     html,
     scripts,
@@ -149,9 +149,9 @@ export const build = gulp.series(
 
 export default gulp.series(
   clean,
+  copy,
+  copyImages,
   gulp.parallel(
-    copy,
-    copyImages,
     styles,
     html,
     scripts,

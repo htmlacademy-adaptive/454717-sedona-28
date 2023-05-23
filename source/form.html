@@ -4,19 +4,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <title>HTML Academy: Седона, форма поиска</title>
   <meta name="description" content="Учебный проект HTML Academy: Седона. Страница формы поиска.">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
-  <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
   <div class="page__container">
     <header class="main-header no-js">
-      <a class="main-header__logo" href="index.html">
+      <a class="main-header__logo" href="index.html" aria-label="Перейти на главную страницу сайта.">
         <img src="img/content/header-logo.svg" width="185" height="96" alt="Логотип сайта о городке Седона.">
       </a>
       <button class="main-header__toggle" type="button">
@@ -47,8 +49,8 @@
       </section>
       <section class="feedback">
         <div class="feedback__heading heading">
-          <h2 class="heading__title heading__title--font-size-l">Оставьте свой отзыв</h2>
-          <p class="heading__description">Помогите нашим отелям стать лучше! Оставьте отзыв о&nbsp;них, а&nbsp;также о&nbsp;посещенных вами достопримечательностях</p>
+          <h2 class="heading__title heading__title--size-l heading__title--margin-tiny">Оставьте свой отзыв</h2>
+          <p class="heading__description">Помогите нашим отелям стать лучше! Оставьте отзыв о&nbsp;них, а&nbsp;также о посещенных вами достопримечательностях</p>
         </div>
         <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="form__group form__group--user-information">
@@ -92,7 +94,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__group form__group--full form__group--impression">
-            <h3 class="form__legend">Ваше общее впечатление:</h3>
+            <h3 class="form__legend form__legend--has-line">Ваше общее впечатление:</h3>
             <ul class="form__list form__list--columns-wide">
               <li class="form__item">
                 <label class="form__element custom-element">
@@ -117,8 +119,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__group form__group--full">
-            <h3 class="form__legend">Посещенные достопримечательности:</h3>
+          <fieldset class="form__group form__group--full form__group--sights">
+            <h3 class="form__legend form__legend--has-line">Посещенные достопримечательности:</h3>
             <ul class="form__list form__list--columns-narrow">
               <li class="form__item">
                 <label class="form__element custom-element">
@@ -151,7 +153,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__group form__group--full form__group--textarea">
-            <h3 class="form__legend">Опишите свои эмоции:</h3>
+            <h3 class="form__legend form__legend--has-line">Опишите свои эмоции:</h3>
             <label class="form__textarea form-input">
               <span class="visually-hidden">Что вам понравилось?</span>
               <textarea class="form-input__input form-input__input--textarea" name="feedback-textarea" placeholder="Опишите подробно все свои восторги"></textarea>
@@ -183,31 +185,31 @@
           </a>
         </li>
       </ul>
-      <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener">
+      <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener" aria-label="Перейти на сайт HTML Academy.">
         <span class="main-footer__copyright-text">Разработано</span>
-        <svg class="main-footer__copyright-logo" role="img" aria-label="HTML Academy" width="29" height="35" viewBox="0 0 29 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path d="M14.65 0.449951H14.55L1.05 1.84995V26.55L14.55 34.5499L27.95 26.55V1.84995L14.65 0.449951ZM26.05 12.55L14.55 5.74995V5.64995H14.45L14.35 5.54995V5.64995L2.95 12.55V3.54995L14.45 2.34995L26.05 3.54995V12.55ZM14.45 7.24995L25.95 13.95L21.45 16.55L14.35 12.35V13.75L20.25 17.25L19.35 17.75L14.35 14.75V16.15L18.15 18.45L17.35 18.95L14.35 17.15V18.55L16.25 19.65L14.45 20.75L3.05 14.05L14.45 7.24995ZM2.95 15.55L14.35 22.35V23.35L6.45 18.65V20.05L14.45 24.85V25.95L6.45 21.25V22.65L14.45 27.45L22.55 22.55V17.35L25.95 15.35V25.35L14.45 32.25L2.95 25.45V15.55Z"/>
+        <svg class="main-footer__copyright-logo" role="img" aria-label="HTML Academy." width="29" height="35">
+          <use xlink:href="img/stack.svg#htmlacademy-logo"></use>
         </svg>
       </a>
     </footer>
   </div>
-  <!-- Для показа модального окна добавьте класс .modal--is-open -->
+  <!-- Для показа модального окна добавьте класс modal--open -->
   <div class="modal">
-    <section class="modal__content modal__content--error">
-      <div class="modal__heading heading">
-        <h2 class="heading__title &--font-size-2xl">Что-то пошло не так!</h2>
+    <section class="modal__content modal-error">
+      <div class="modal-error__heading heading">
+        <h2 class="heading__title heading__title--size-l heading__title--margin-small">Что-то пошло не&nbsp;так!</h2>
         <p class="heading__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       </div>
-      <button class="modal__button button" type="button">OK</button>
+      <button class="modal-error__button button" type="button">OK</button>
     </section>
   </div>
   <div class="modal">
-    <section class="modal__content modal__content--success">
-      <div class="modal__heading heading">
-        <h2 class="heading__title &--font-size-l">Ваш отзыв отправлен!</h2>
-        <p class="heading__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+    <section class="modal__content modal-success">
+      <div class="modal-success__heading heading">
+        <h2 class="heading__title heading__title--size-l heading__title--margin-small">Ваш отзыв отправлен!</h2>
+        <p class="heading__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
       </div>
-      <button class="modal__button button" type="button">Закрыть окно</button>
+      <button class="modal-success__button button" type="button">Закрыть окно</button>
     </section>
   </div>
   <script src="js/script.js"></script>
