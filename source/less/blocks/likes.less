@@ -4,6 +4,7 @@
   flex-shrink: 0;
   padding-left: 37px;
 
+  font-size: 14px;
   font-family: inherit;
 
   background-color: transparent;
@@ -39,6 +40,10 @@
     mask-image: url("../img/stack.svg#icon-like");
     mask-position: center;
     mask-repeat: no-repeat;
+
+    @media (min-width: @vp-768) {
+      top: -3px;
+    }
 
     @media (min-width: @vp-1200) {
       background-color: @color-white;

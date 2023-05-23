@@ -43,6 +43,10 @@
       grid-column-start: 4;
     }
   }
+
+  &:last-child .main-nav__link {
+    box-shadow: inset 0 1px 0 rgba(@color-white, 0.2);
+  }
 }
 
 .main-nav__link {
@@ -101,8 +105,4 @@
       color: @color-roman-coffee;
     }
   }
-}
-
-.main-nav__item:last-child .main-nav__link {
-  box-shadow: inset 0 1px 0 rgba(@color-white, 0.2);
 }

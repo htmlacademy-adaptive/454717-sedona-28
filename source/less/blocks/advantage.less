@@ -17,6 +17,10 @@
     @media (min-width: @vp-1200) {
       padding: 52px 65px 51px 65px;
     }
+
+    .advantage__title {
+      color: @color-white;
+    }
   }
 
   &--background-muted {
@@ -172,10 +176,6 @@
   }
 }
 
-.advantage--background-bright .advantage__title {
-  color: @color-white;
-}
-
 .advantage__number {
   margin: 0 0 17px 0;
 
@@ -190,20 +190,20 @@
   &:not(:last-child) {
     margin-bottom: 10px;
   }
-}
 
-.advantage__description br {
-  display: none;
+  .br-tablet-desktop {
+    display: none;
 
-  @media (min-width: @vp-768) {
-    display: initial;
+    @media (min-width: @vp-768) {
+      display: initial;
+    }
   }
-}
 
-.advantage__description .br-desktop {
-  display: none;
+  .br-desktop {
+    display: none;
 
-  @media (min-width: @vp-1200) {
-    display: initial;
+    @media (min-width: @vp-1200) {
+      display: initial;
+    }
   }
 }

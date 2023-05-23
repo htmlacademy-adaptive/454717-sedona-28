@@ -2,7 +2,7 @@
   padding: 37px 20px 0 20px;
 
   @media (min-width: @vp-768) {
-    padding: 61px 60px 50px 60px;
+    padding: 59px 60px 50px 60px;
   }
 
   @media (min-width: @vp-1200) {
@@ -43,10 +43,6 @@
 .media__item {
   position: relative;
 
-  &--full {
-    grid-column: 1 / -1;
-  }
-
   @media (max-width: (@vp-768 - 0.02)) {
     &:last-child::after,
     &::before {
@@ -64,6 +60,50 @@
     &:last-child::after {
       top: auto;
       bottom: 0;
+    }
+  }
+
+  &--full {
+    grid-column: 1 / -1;
+
+    .media__card-description {
+      @media (min-width: @vp-1200) {
+        align-self: end;
+        margin-top: 320px;
+        padding: 22px 15px 15px 21px;
+      }
+    }
+
+    .media__title {
+      @media (min-width: @vp-1200) {
+        margin-bottom: 1px;
+      }
+    }
+  }
+
+  &--small {
+    &:nth-child(odd) .media__card-description {
+      @media (min-width: @vp-768) and (max-width: (@vp-1200 - 0.02)) {
+        background-color: @color-whisper-ea;
+      }
+    }
+
+    .media__card-description {
+      @media (min-width: @vp-1200) {
+        padding: 17px 15px 17px 25px;
+      }
+    }
+
+    .media__title {
+      @media (min-width: @vp-1200) {
+        margin-bottom: 4px;
+      }
+    }
+
+    .media__likes {
+      @media (min-width: @vp-1200) {
+        margin-top: 16px;
+      }
     }
   }
 }
@@ -147,44 +187,6 @@
 
     grid-column: 1/2;
     grid-row: 1/2;
-  }
-
-  &--background-dark {
-    @media (min-width: @vp-768) and (max-width: (@vp-1200 - 1px)) {
-      background-color: @color-whisper-ea;
-    }
-  }
-}
-
-.media__item--full .media__card-description {
-  @media (min-width: @vp-1200) {
-    align-self: end;
-    margin-top: 320px;
-    padding: 22px 15px 15px 21px;
-  }
-}
-
-.media__item--full .media__title {
-  @media (min-width: @vp-1200) {
-    margin-bottom: 1px;
-  }
-}
-
-.media__item:not(.media__item--full) .media__card-description {
-  @media (min-width: @vp-1200) {
-    padding: 17px 15px 17px 25px;
-  }
-}
-
-.media__item:not(.media__item--full) .media__title {
-  @media (min-width: @vp-1200) {
-    margin-bottom: 4px;
-  }
-}
-
-.media__item:not(.media__item--full) .media__likes {
-  @media (min-width: @vp-1200) {
-    margin-top: 16px;
   }
 }
 

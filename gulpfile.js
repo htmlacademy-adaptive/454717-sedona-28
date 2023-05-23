@@ -70,13 +70,13 @@ const createWebP = () => {
 //SVG
 
 const svg = () => {
-  return gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
+  return gulp.src(['source/img/**/*.svg', '!source/img/svg/*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 }
 
 const makeStack = () => {
-  return gulp.src('source/img/icons/**/*.svg')
+  return gulp.src('source/img/svg/**/*.svg')
     .pipe(svgo())
     .pipe(stacksvg())
     .pipe(gulp.dest('build/img'));

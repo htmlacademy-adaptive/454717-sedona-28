@@ -6,6 +6,10 @@
 
   gap: 16px;
   grid-template-columns: 46px 1fr;
+
+  &:hover .custom-element__icon {
+    background-color: @color-whisper-e5;
+  }
 }
 
 .custom-element__icon {
@@ -47,41 +51,39 @@
   }
 }
 
-.custom-element__input:checked + .custom-element__icon--radio::before {
-  background-color: @color-night-rider;
-}
+.custom-element__input {
+  &:checked + .custom-element__icon--radio::before {
+    background-color: @color-night-rider;
+  }
 
-.custom-element__input:checked + .custom-element__icon--checkbox::before {
-  background-image: url("../img/stack.svg#icon-tick");
-}
+  &:checked + .custom-element__icon--checkbox::before {
+    background-image: url("../img/stack.svg#icon-tick");
+  }
 
-.custom-element:hover .custom-element__icon {
-  background-color: @color-whisper-e5;
-}
+  &:active + .custom-element__icon {
+    background-color: @color-light-grey-d5;
 
-.custom-element__input:active + .custom-element__icon {
-  background-color: @color-light-grey-d5;
+    &::before {
+      opacity: 0.3;
+    }
+  }
 
-  &::before {
+  &:disabled ~ span {
+    cursor: auto;
     opacity: 0.3;
   }
-}
 
-.custom-element__input:disabled ~ span {
-  cursor: auto;
-  opacity: 0.3;
-}
+  &:disabled + .custom-element__icon {
+    background-color: @color-white-smoke;
 
-.custom-element__input:disabled + .custom-element__icon {
-  background-color: @color-white-smoke;
-
-  &::before {
-    opacity: 1;
+    &::before {
+      opacity: 1;
+    }
   }
-}
 
-.custom-element__input:focus + .custom-element__icon {
-  box-shadow: 0 0 0 2px @color-seagull;
+  &:focus + .custom-element__icon {
+    box-shadow: 0 0 0 2px @color-seagull;
+  }
 }
 
 .custom-element__text {
